@@ -1,4 +1,5 @@
 asgiref==3.11.0
+dj-database-url==3.1.2
 Django==6.0.1
 django-cors-headers==4.9.0
 djangorestframework==3.18.0
@@ -7,6 +8,7 @@ joblib==1.5.3
 numpy==2.4.4
 packaging==26.2
 pandas==3.0.2
+psycopg2-binary==2.9.12
 python-dateutil==2.9.0.post0
 scikit-learn==1.8.0
 scipy==1.17.1
@@ -14,3 +16,4 @@ six==1.17.0
 sqlparse==0.5.5
 threadpoolctl==3.6.0
 tzdata==2025.3
+whitenoise==6.12.0
