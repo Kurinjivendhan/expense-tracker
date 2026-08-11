@@ -228,7 +228,7 @@ function Dashboard() {
         try {
 
             const response = await apiFetch(
-                `http://127.0.0.1:8000/api/expenses/${id}/`,
+                `${API_BASE_URL}/api/expenses/${id}/`,
                 {
                     method: "DELETE"
                 }
@@ -283,7 +283,7 @@ function Dashboard() {
             try {
 
                 const response = await apiFetch(
-                    "http://127.0.0.1:8000/api/expenses/",
+                    `${API_BASE_URL}/api/expenses/`,
                     {
                         method: "GET"
                     }

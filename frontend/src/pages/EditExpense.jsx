@@ -35,7 +35,7 @@ function EditExpense() {
             try {
 
                 const response = await apiFetch(
-                    `http://127.0.0.1:8000/api/expenses/${id}/`,
+                    `${API_BASE_URL}/api/expenses/${id}/`,
                     {
                         method: "GET",
                     })
@@ -121,7 +121,7 @@ function EditExpense() {
     try {
 
         const response = await apiFetch(
-            `http://127.0.0.1:8000/api/expenses/${id}/`,
+            `${API_BASE_URL}/api/expenses/${id}/`,
             {
                 method: "PATCH",
 
@@ -130,10 +130,7 @@ function EditExpense() {
             }
         );
 
-        // console.log(
-        //     "PATCH URL:",
-        //     `http://127.0.0.1:8000/api/expenses/${id}/`
-        // );
+        
 
         // console.log("PATCH Status:", response.status);
 
