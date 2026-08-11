@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { apiFetch } from "../api.js";
+import { apiFetch, API_BASE_URL } from "../api.js";
 import Navbar from "../components/Navbar";
 import "./AddExpense.css"
 
@@ -67,7 +67,7 @@ function AddExpense() {
         try {
 
             const response = await apiFetch(
-                "http://127.0.0.1:8000/api/expenses/",
+                 `${API_BASE_URL}/api/expenses/`,
                 {
                     method: "POST",
 

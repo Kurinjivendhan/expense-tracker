@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { apiFetch } from "../api.js";
+import { apiFetch, API_BASE_URL } from "../api.js";
 import { Doughnut } from "react-chartjs-2";
 import Navbar from "../components/Navbar";
 

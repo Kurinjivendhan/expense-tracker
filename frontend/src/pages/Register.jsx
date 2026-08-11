@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Register.css";
+import { apiFetch, API_BASE_URL } from "../api.js";
+
 
 
 function Register() {
@@ -51,7 +53,7 @@ function Register() {
         try {
 
             const response = await fetch(
-                "http://127.0.0.1:8000/api/register/",
+                `${API_BASE_URL}/api/register/`,
                 {
                     method: "POST",
 
