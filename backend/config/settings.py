@@ -68,6 +68,10 @@ MIDDLEWARE = [
 
 CORS_ALLOW_ALL_ORIGINS = True
 
+CORS_ALLOWED_ORIGINS = [
+    "https://expense-tracker-frontend-cy1g.onrender.com",
+]
+
 ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
