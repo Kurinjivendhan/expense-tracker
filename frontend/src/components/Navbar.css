@@ -1,0 +1,54 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 30px;
+
+    border-bottom: 1px solid #ddd;
+
+    background-color: white;
+}
+
+.navbar-logo {
+    margin: 0;
+    cursor: pointer;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar-links button {
+    padding: 8px 14px;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+
+        padding: 15px;
+    }
+
+    .navbar-links {
+        width: 100%;
+
+        flex-direction: column;
+    }
+
+    .navbar-links button {
+        width: 100%;
+    }
+
+}
